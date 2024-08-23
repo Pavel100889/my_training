@@ -7,4 +7,4 @@ def get_matrix(n, m, value):
     print('Matrix:')
     for g in range(n):
         print(matrix[g])
-get_matrix(3,4,22)
+get_matrix(4,5,23)
