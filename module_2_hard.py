@@ -9,7 +9,8 @@ for i in range(1, 20):
         if a % (i + j) == 0:
             password.append(i)
             password.append(j)
+        if j == 10:
             n += 1
-print("".join(map(str, password)))
-
+# print("".join(map(str, password)))
+print(password)
 
