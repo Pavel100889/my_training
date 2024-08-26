@@ -11,6 +11,6 @@ for i in range(1, 20):
             password.append(j)
         if j == 10:
             n += 1
-# print("".join(map(str, password)))
-print(password)
+print("".join(map(str, password)))
+
 
