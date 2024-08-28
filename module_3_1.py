@@ -7,9 +7,9 @@ def count_calls():
 
 
 def string_info(string):
+    count_calls()
     string_print = (len(string), string.upper(), string.lower())
     print(string_print)
-    count_calls()
 
 
 def is_contains(string, list_to_search):
@@ -17,9 +17,9 @@ def is_contains(string, list_to_search):
     string = string.upper()
     list_to_search_up = [s.upper() for s in list_to_search]
     if string in list_to_search_up:
-        print(True)
+        return True
     else:
-        print(False)
+        return False
 
 
 string_info('Alcatel')
