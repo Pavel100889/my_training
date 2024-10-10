@@ -4,6 +4,19 @@ class Animal:
         self.fed = False
         self.name = name
 
+    def eat(self, food):
+        if isinstance(food, Plant):
+            if food.edible:
+                print(f"{self.name} съел {food.name}")
+                self.fed = True
+            else:
+                print(f"{self.name} не стал есть {food.name}")
+                self.alive = False
+        else:
+
+            print(f"{self.name} не может есть {food.name}")
+            return None
+
 
 class Plant:
     def __init__(self, name):
@@ -12,29 +25,11 @@ class Plant:
 
 
 class Mammal(Animal):
-    def eat(self, food):
-        if isinstance(food, Plant):
-            if food.edible:
-                print(f"{self.name} съел {food.name}")
-                self.fed = True
-            else:
-                print(f"{self.name} не стал есть {food.name}")
-                self.alive = False
-        else:
-            print(f"{self.name} не может есть {food.name}")
+    pass
 
 
 class Predator(Animal):
-    def eat(self, food):
-        if isinstance(food, Plant):
-            if food.edible:
-                print(f"{self.name} съел {food.name}")
-                self.fed = True
-            else:
-                print(f"{self.name} не стал есть {food.name}")
-                self.alive = False
-        else:
-            print(f"{self.name} не может есть {food.name}")
+    pass
 
 
 class Flower(Plant):
