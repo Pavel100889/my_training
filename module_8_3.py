@@ -40,6 +40,7 @@ class Car:
 
         return True
 
+
 try:
     first = Car('Model1', 1000000, 'f123dj')
 except IncorrectVinNumber as exc:
