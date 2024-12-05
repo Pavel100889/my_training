@@ -10,4 +10,3 @@ third_result = {s: len(s) for s in first_strings + second_strings if len(s) % 2 
 print(first_result)
 print(second_result)
 print(third_result)
-123
