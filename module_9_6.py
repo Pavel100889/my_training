@@ -1,8 +1,9 @@
 def all_variants(text):
     n = len(text)
-    for i in range(n):
-        for j in range(i + 1, n + 1):
-            yield text[i:j]
+    for length in range(1, n + 1):
+        for start in range(n - length + 1):
+            substring = text[start:start + length]
+            yield substring
 
 
 a = all_variants("abc")
