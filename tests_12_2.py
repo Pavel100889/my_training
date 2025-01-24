@@ -38,6 +38,5 @@ class TournamentTest(unittest.TestCase):
         TournamentTest.all_results[3] = results
         self.assertTrue(results[max(results.keys())] == self.runner3)
 
-
 if __name__ == "__main__":
     unittest.main()
